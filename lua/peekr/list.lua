@@ -70,7 +70,7 @@ end
 -- Location processing helpers
 
 local function is_starting_location(params, uri, range)
-  if uri ~= params.textDocument.uri then return false end
+  if not params.position or uri ~= params.textDocument.uri then return false end
   local r = Range:new(range.start.line, range.start.character, range.finish.line, range.finish.character)
   return r:contains({ line = params.position.line, col = params.position.character })
 end
