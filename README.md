@@ -1,4 +1,4 @@
-# Peekr
+# Peekr.nvim
 
 A Neovim plugin that provides a floating peek UI for LSP locations -- definitions, references, implementations, call hierarchy, and more -- with treesitter syntax highlighting in the preview pane.
 
@@ -29,7 +29,7 @@ A Neovim plugin that provides a floating peek UI for LSP locations -- definition
 
 ```lua
 {
-  'mikkurogue/peekr',
+  'mikkurogue/peekr.nvim',
   event = 'LspAttach',
   opts = {
     -- your configuration here
@@ -41,7 +41,7 @@ A Neovim plugin that provides a floating peek UI for LSP locations -- definition
 
 ```lua
 use {
-  'mikkurogue/peekr',
+  'mikkurogue/peekr.nvim',
   config = function()
     require('peekr').setup({
       -- your configuration here
@@ -55,7 +55,7 @@ use {
 Add the following to your `init.lua`:
 
 ```lua
-vim.pack.add({ src = 'https://github.com/mikkurogue/peekr' })
+vim.pack.add({ src = 'https://github.com/mikkurogue/peekr.nvim' })
 require('peekr').setup({
   -- your configuration here
 })
