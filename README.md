@@ -61,6 +61,10 @@ require('peekr').setup({
 })
 ```
 
+## Showcase
+
+<img width="1992" height="622" alt="image" src="https://github.com/user-attachments/assets/a5c8f841-b2fb-4c81-83ca-1f5582bd699a" />
+
 ## Usage
 
 ### Commands
